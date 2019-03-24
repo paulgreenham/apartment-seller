@@ -40,8 +40,14 @@
         <div class="result">
             <img src="{{img}}">
             <span class="label l-addr">Address:</span><span class="address">{{address}}</span>
-            <span class="label l-price">Price:</span><span class="price">{{price}}</span>
+            <span class="label l-price">Price:</span><span class="price">{{formatNumber price style="currency" currency="USD"}}</span>
             <span class="label l-rooms">Rooms:</span><span class="rooms">{{rooms}}</span>
+            <span class="label l-features">Features:</span>
+            <ul class="features">
+                {{#each features}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
             <span class="label l-park">Parking:</span>
             {{#if parking}}
             <i class="fas fa-car parking"></i>
@@ -62,6 +68,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="handlebars-intl.min.js"></script>
     <script src="apt-data.js"></script>
     <script src="apt-filter.js"></script>
     <script src="main.js"></script>

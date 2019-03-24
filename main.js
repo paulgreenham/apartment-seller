@@ -1,3 +1,6 @@
+HandlebarsIntl.registerWith(Handlebars)
+
+const intlData = {"locales": "en-US"}
 
 $("button").on("click", function () {
     let address = $("#addr-input").val()
@@ -15,7 +18,11 @@ const renderApts = function (apartments) {
     $("#results").empty()
     let source = $("#result-template").html()
     let template = Handlebars.compile(source)
-    $("#results").append(template({apartments}))
+    let newHTML = template(
+        {apartments}, 
+        {data: {intl: intlData}}
+    )
+    $("#results").append(newHTML)
 }
 
 renderApts(apartments) //renders apartments when page loads

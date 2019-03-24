@@ -7,6 +7,7 @@ const apartments = [
         address: "P. Sherman 42 Wallabe Way, Sydney",
         price: 2400,
         rooms: 2,
+        features: ["Indoor Plumbing", "Yard"],
         parking: false,
         immediate: true,
         contactDetails: {
@@ -19,6 +20,7 @@ const apartments = [
         address: "Cherobee 21, South Boulevard",
         price: 12000,
         rooms: 5,
+        features: ["AC", "Elevator", "Indoor Plumbing", "Yard", "Garage", "Intercom"],
         parking: true,
         immediate: false,
         contactDetails: {
@@ -31,6 +33,7 @@ const apartments = [
         address: "100 Bonaroo Road, East Dingling",
         price: 1000,
         rooms: 3,
+        features: ["Indoor Plumbing", "Yard", "Garage"],
         parking: false,
         immediate: true,
         contactDetails: {
@@ -43,6 +46,7 @@ const apartments = [
         address: "McGraw Chukitee, 80",
         price: 2300,
         rooms: 4,
+        features: ["Indoor Plumbing", "Yard", "AC"],
         parking: false,
         immediate: false,
         contactDetails: {
@@ -55,6 +59,7 @@ const apartments = [
         address: "A.D Nooks Plaza, 16 St.",
         price: 11000,
         rooms: 6,
+        features: ["Indoor Plumbing", "Yard", "Garage", "AC", "Pool"],
         parking: true,
         immediate: true,
         contactDetails: {

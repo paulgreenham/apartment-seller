@@ -71,6 +71,7 @@ label{
     "i la a"
     "i lpr p"
     "i lr r"
+    "i lf f"
     "i lpark park"
     "i limm imm";
     box-shadow: 1px 1px 3px #0a1612;
@@ -127,6 +128,10 @@ button:active{background-color: #443729;}
     grid-area: lr;
 }
 
+.result>.l-features{
+    grid-area: lf;
+}
+
 .result>.l-park{
     grid-area: lpark;
 }
@@ -145,6 +150,10 @@ button:active{background-color: #443729;}
 
 .result>.rooms {
     grid-area: r;
+}
+
+.result>.features{
+    grid-area: f;
 }
 
 .result>.parking{
